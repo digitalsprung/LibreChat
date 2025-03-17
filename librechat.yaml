@@ -14,3 +14,8 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
+ocr:
+  mistralModel: "mistral-ocr-latest"  # Optional: Specify Mistral model, defaults to "mistral-ocr-latest"
+  apiKey: "your-mistral-api-key"        # Optional: Defaults to OCR_API_KEY env variable
+  baseURL: "https://api.mistral.ai/v1"  # Optional: Defaults to OCR_BASEURL env variable, or Mistral's API if no variable set
+  strategy: "mistral_ocr"    
