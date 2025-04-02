@@ -20,6 +20,22 @@ ocr:
   baseURL: "https://api.mistral.ai/v1"  # Optional: Defaults to OCR_BASEURL env variable, or Mistral's API if no variable set
   strategy: "mistral_ocr"    
 speech:
+  speechTab:
+    conversationMode: true
+    advancedMode: false
+    speechToText:
+      engineSTT: "external"
+      languageSTT: "English (US)"
+      autoTranscribeAudio: true
+      decibelValue: -45
+      autoSendText: 0
+    textToSpeech:
+      engineTTS: "external"
+      voice: "alloy"
+      languageTTS: "en"
+      automaticPlayback: true
+      playbackRate: 1.0
+      cacheTTS: true
   stt:
     openai:
       apiKey: '${STT_API_KEY}'
